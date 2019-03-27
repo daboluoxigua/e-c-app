@@ -2,19 +2,25 @@
 <template>
   <div class="tabBar">
     <div>
-      <router-link to="/a">
+      <router-link to="/home" class="home">
         <span></span>
         <p>首页</p>
       </router-link>
     </div>
     <div>
-      <router-link to="/b">
+      <router-link to="/shopping" class="shopping">
         <span></span>
-        <p>C2C交易</p>
+        <p>购物车</p>
       </router-link>
     </div>
     <div>
-      <router-link to="/">
+      <router-link to="/c2c" class="c2c">
+        <span></span>
+        <p>C2C</p>
+      </router-link>
+    </div>
+    <div>
+      <router-link to="/my" class="my">
         <span></span>
         <p>我的</p>
       </router-link>
@@ -24,13 +30,7 @@
 
 <script>
 export default {
-  data () {
-    return {
-    };
-  },
-  components: {},
-  mounted(){},
-  methods: {}
+ 
 }
 
 </script>
@@ -44,6 +44,7 @@ export default {
   height: 98px;
   display: table;
   background: #fff;
+  border-top: 1px solid #B4B4B4;
   div{
     display: table-cell;
     a{width: 100%;height: 100%;display: inline-block}
@@ -55,10 +56,22 @@ export default {
       @include bg-image('../../assets/bg');
       background-size: 100% 100%;
     }
-    p{font-size: 20px}
-    >.active{
-      p{color: #53A1FA}
+    p{font-size: 24px;margin-top: 10px;}
+    >.router-link-exact-active{
+      p{color: #DEA567}
     }
+
+    .home span{@include bg-image('../../assets/tabbar/home2');}
+    .home.router-link-exact-active span{@include bg-image('../../assets/tabbar/home');}
+
+    .shopping span{@include bg-image('../../assets/tabbar/shopping2');}
+    .shopping.router-link-exact-active span{@include bg-image('../../assets/tabbar/shopping');}
+
+    .c2c span{@include bg-image('../../assets/tabbar/c2c2');}
+    .c2c.router-link-exact-active span{@include bg-image('../../assets/tabbar/c2c');}
+
+    .my span{@include bg-image('../../assets/tabbar/my2');}
+    .my.router-link-exact-active span{@include bg-image('../../assets/tabbar/my');}
   }
 }
 </style>

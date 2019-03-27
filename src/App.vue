@@ -5,13 +5,12 @@
         <router-view class="Router" :key="$route.fullPath"></router-view>
       </keep-alive>
     </transition>
-    <tabBar></tabBar>
   </div>
 </template>
 
 
 <script>
-import tabBar from "./components/tabBar/tabBar.vue";
+
 export default {
   data() {
     return {
@@ -29,9 +28,6 @@ export default {
       this.$router.isBack = false;
     }
   },
-  components: {
-    tabBar
-  }
 };
 </script>
 
@@ -43,6 +39,7 @@ export default {
 body,
 html {
   height: 100%;
+  background: #f5f5f5;
 }
 #app {
   font-family: "HiraginoSansGB", Helvetica, Arial, sans-serif;
@@ -52,17 +49,18 @@ html {
   height: 100%;
 }
 .boxScroll {
-  
+  width: 100%;
+  display: inline-block;
+  height: calc(100% - 1.4rem);
 }
 
 .Router {
   transition: all 0.8s ease;
   width: 100%;
+  height: 100%;
   position: relative;
-  display: inline-block;
-  height: calc(100% - 1.4rem);
 }
-.slide-left-enter,
+/* .slide-left-enter,
 .slide-right-leave-active {
   opacity: 0;
   -webkit-transform: translate(100%, 0);
@@ -74,5 +72,5 @@ html {
   opacity: 0;
   -webkit-transform: translate(-100%, 0);
   transform: translate(-100% 0);
-}
+} */
 </style>

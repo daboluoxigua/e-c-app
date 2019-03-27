@@ -9,7 +9,14 @@ export default new VueRouter({
   base: '/',
   routes: [
     {
-      path: '/',
+      path: '/home',
+      component: resolve => require(['../components/home/home.vue'], resolve),
+      meta: {
+        title: '欢迎'
+      }
+    },
+    {
+      path: '/my',
       component: resolve => require(['../components/members/membersIndex/membersIndex.vue'], resolve),
       meta: {
         title: '欢迎'
