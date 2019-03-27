@@ -33,7 +33,7 @@
         <div class="member">
             <div class="avatar">
                 <span><img :src="linkerImg[0].src" alt=""></span>
-                <p>SHAWA...</p>
+                <p>SHAWAaas</p>
             </div>
         </div>
       </div>
