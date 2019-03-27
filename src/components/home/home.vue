@@ -19,15 +19,21 @@
             </div>
             <div class="shou">
                 <span></span>
-                <p></p>
+                <p>收付款</p>
             </div>
             <div class="zhuan">
                 <span></span>
-                <p></p>
+                <p>转账</p>
             </div>
             <div class="share">
                 <span></span>
-                <p></p>
+                <p>分享好友</p>
+            </div>
+        </div>
+        <div class="member">
+            <div class="avatar">
+                <span><img :src="linkerImg[0].src" alt=""></span>
+                <p>SHAWA...</p>
             </div>
         </div>
       </div>
@@ -39,9 +45,14 @@
 
 <script>
 import tabBar from "../tabBar/tabBar.vue";
+import { request } from 'http';
 export default {
   data() {
-    return {};
+    return {
+        linkerImg:[{
+            src:require('../../assets/home/03@2x.png')
+        }]
+    };
   },
   components: {
     tabBar
@@ -58,6 +69,8 @@ export default {
   width: 100%;
   height: 274px;
   .top {
+      width: 100%;
+      display: inline-block;
     padding: 11px 37px 0;
     .prompt {
       float: left;
@@ -91,6 +104,21 @@ export default {
         display: inline-block;
         @include bg-image("../../assets/home/search_button");
     }
+  }
+  .shortcut{
+      width: 100%;
+      margin-top: 58px;
+      display: table;
+      >div{
+          width: 25%;
+          display: inline-block;
+          span{width: 48px;height: 48px;display: inline-block}
+          p{font-size: 26px;color: #AE8F5F;margin-top: 25px;}
+      }
+      .sao span{@include bg-image("../../assets/home/sao");}
+      .shou span{@include bg-image("../../assets/home/矩形 27");}
+      .zhuan span{@include bg-image("../../assets/home/形状 3");}
+      .share span{@include bg-image("../../assets/home/02");}
   }
 }
 </style>
