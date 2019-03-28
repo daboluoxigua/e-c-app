@@ -56,7 +56,7 @@ export default {
       @include bg-image('../../assets/bg');
       background-size: 100% 100%;
     }
-    p{font-size: 24px;margin-top: 10px;}
+    p{font-size: 24px;margin-top: 10px;color: #626262;line-height: 30px;}
     >.router-link-exact-active{
       p{color: #DEA567}
     }

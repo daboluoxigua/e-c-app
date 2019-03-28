@@ -10,7 +10,6 @@
 
 
 <script>
-
 export default {
   data() {
     return {
@@ -35,12 +34,16 @@ export default {
 * {
   margin: 0;
   padding: 0;
+  touch-action: pan-y;
 }
 body,
 html {
   height: 100%;
   background: #f5f5f5;
 }
+li{list-style: none;}
+p{margin-bottom: 0 !important;}
+a,a:hover{color: #000;text-decoration: none}
 #app {
   font-family: "HiraginoSansGB", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -55,7 +58,7 @@ html {
 }
 
 .Router {
-  transition: all 0.8s ease;
+  /* transition: all 0.8s ease; */
   width: 100%;
   height: 100%;
   position: relative;
