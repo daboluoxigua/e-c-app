@@ -13,7 +13,7 @@
 export default {
   data() {
     return {
-      transitionName: "slide-right" // 默认动态路由变化为slide-right
+      transitionName: "slide-right" // 默认动态路由变化为slide-right 没
     };
   },
   watch: {

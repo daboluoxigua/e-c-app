@@ -253,7 +253,7 @@ export default {
       span{width: 68px;height: 68px;display: inline-block;
         img{width: 100%;height: 100%;}
       }
-      p{font-size: 24px}
+      p{font-size: 24px} 
     }
   }
 }
