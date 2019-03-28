@@ -255,6 +255,7 @@ export default {
       }
       p{font-size: 24px} 
     }
+    tr td:nth-child(1){border-left: none}
   }
 }
 </style>

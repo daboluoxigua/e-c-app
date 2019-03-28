@@ -152,7 +152,7 @@
 </template>
 
 <script>
-import tabBar from "../tabBar/tabBar.vue";//底部导航
+// import tabBar from "../tabBar/tabBar.vue";//底部导航
 export default {
   data() {
     return {
@@ -174,7 +174,7 @@ export default {
     };
   },
   components: {
-    tabBar
+    // tabBar
   },
   mounted() {
     mui('.mui-scroll-wrapper').scroll({

@@ -53,7 +53,6 @@ export default {
       width:44px;
       height:44px;
       margin-top: 8px;
-      @include bg-image('../../assets/bg');
       background-size: 100% 100%;
     }
     p{font-size: 24px;margin-top: 10px;color: #626262;line-height: 30px;}

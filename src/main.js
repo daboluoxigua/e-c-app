@@ -13,6 +13,10 @@ import 'vue-awesome-mui/mui/dist/css/mui.css'
 Vue.use(Mui)
 // mui结束
 
+import tabBar from './components/tabBar/tabBar'
+Vue.use(tabBar)
+
+
 new Vue({
   router,
   render: h => h(App)

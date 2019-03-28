@@ -30,6 +30,15 @@ const router = new VueRouter({
       }
     },
     {
+      path: '/usdtTransfer',
+      component: resolve => require(['../components/members/usdtTransfer/usdtTransfer.vue'], resolve),
+      name: 'usdtTransfer',
+      meta: {
+        title: 'usdt转账',
+        requiresAuth: true
+      }
+    },
+    {
       path: '/login',
       // component: resolve => require(['../components/members/membersIndex/membersIndex.vue'], resolve),
       name: 'login',
