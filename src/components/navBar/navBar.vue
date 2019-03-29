@@ -1,7 +1,7 @@
 <!-- 顶部状态 -->
 <template>
   <div class="navBar">
-      <div class="back"></div>
+      <div class="back" @click="back"></div>
       <div class="title">{{title}}</div>
   </div>
 </template>
@@ -12,7 +12,11 @@ export default {
   components: {},
   computed: {},
   mounted(){},
-  methods: {}
+  methods: {
+    back(){
+      this.$router.back()
+    }
+  }
 }
 
 </script>
@@ -23,6 +27,7 @@ export default {
     height: (128 - 40px);
     background: #212121;
     position: relative;
+    text-align: center;
     .back{
         position: absolute;
         left: 30px;

@@ -125,7 +125,6 @@
 </template>
 
 <script>
-import tabBar from "../../tabBar/tabBar.vue";//底部导航
 export default {
   data() {
     return {
@@ -149,7 +148,6 @@ export default {
       ]
     };
   },
-  components: {tabBar},
   mounted() {
     mui('.mui-scroll-wrapper').scroll({
       deceleration: 0.0005
@@ -168,7 +166,7 @@ export default {
     position: relative;
     margin-top: 20px;
     .quit{position:absolute;left: 50px; color: #FADDB3;font-size: 24px;width: 50px;line-height: 28px;font-family:PingFang-SC-Medium;}
-    .title{font-size: 36px;color: #FFFFFF;line-height: 46px;}
+    .title{font-size: 36px;color: #FFFFFF;line-height: 46px;text-align: center;}
     .iconImg{
       position: absolute;
       right: 48px;
@@ -202,7 +200,7 @@ export default {
     }
   }
 
-  .stateInfo{width: 100%;margin-top: 60px;overflow: hidden;padding-bottom:22px;
+  .stateInfo{width: 100%;margin-top: 60px;overflow: hidden;padding-bottom:22px; text-align: center;
     >div{float: left;width: 25%; 
       span{font-size: 28px;font-family:DINPro-Medium;color: #FADDB3;line-height: 30px;}
       p{font-size:24px;font-family:HiraginoSansGB-W3;color: #FADDB3;margin-top: 15px;}
@@ -231,7 +229,7 @@ export default {
   }
 }
 
-.shortcut{margin-top: 20px;width: 100%; background: #fff; padding-bottom: 49px;padding-top: 34px;
+.shortcut{margin-top: 20px;width: 100%; background: #fff; padding-bottom: 49px;padding-top: 34px; text-align: center;
   >div{width: 25%;display: inline-block;
     span{width: 50px;height: 50px;display: inline-block;margin-bottom:18px;
       &.usdt{@include bg-image("../../../assets/membersIndex/usdt (2)");}
@@ -248,7 +246,7 @@ export default {
 }
 
 .portal{background: #fff;padding-top: 20px; margin-bottom: 10px;
-  table{width: 100%;border-top: 1px solid #E7E7E7;
+  table{width: 100%;border-top: 1px solid #E7E7E7; text-align: center;
     td{height: 250px;border-left: 1px solid #E7E7E7;border-bottom: 1px solid #E7E7E7;
       span{width: 68px;height: 68px;display: inline-block;
         img{width: 100%;height: 100%;}

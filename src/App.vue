@@ -48,8 +48,8 @@ a,a:hover{color: #000;text-decoration: none}
   font-family: "HiraginoSansGB", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  text-align: center;
   height: 100%;
+  font-weight:500;
 }
 .boxScroll {
   width: 100%;
@@ -76,4 +76,7 @@ a,a:hover{color: #000;text-decoration: none}
   -webkit-transform: translate(-100%, 0);
   transform: translate(-100% 0);
 } */
+
+/* 黑色按钮 公共样式 */
+.blackButton{height: 88px;width: 690px;margin:0 auto;border: none;background: #000;font-size: 28px;border-radius: 0;display: block;color: #fff;}
 </style>

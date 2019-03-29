@@ -24,12 +24,16 @@
                       <p>收付款</p>
                   </div>
                   <div class="zhuan">
+                     <router-link to="/usdtTransfer">
                       <span></span>
                       <p>转账</p>
+                      </router-link>
                   </div>
                   <div class="share">
+                    <router-link to="/invitation">
                       <span></span>
                       <p>分享好友</p>
+                    </router-link>
                   </div>
               </div>
               <div class="member">
@@ -152,7 +156,6 @@
 </template>
 
 <script>
-// import tabBar from "../tabBar/tabBar.vue";//底部导航
 export default {
   data() {
     return {
@@ -234,6 +237,7 @@ export default {
       width: 100%;
       margin-top: 58px;
       display: table;
+      text-align: center;
       >div{
           width: 25%;
           display: inline-block;
@@ -277,7 +281,7 @@ export default {
   }
 }
 
-.portal{width: 100%;height: 200px; background: #fff;
+.portal{width: 100%;height: 200px; background: #fff; text-align: center;
   li{width: 25%;float: left;margin-top: 46px;
     span{width: 60px;height: 60px;display: inline-block;
       img{width: 100%;height: 100%;}
@@ -290,7 +294,7 @@ export default {
   img{width: 100%;height: 100%;}
 }
 
-.titleBar{background: #fff;padding: 29px 0; color: #252525; font-size: 32px;
+.titleBar{background: #fff;padding: 29px 0; color: #252525; font-size: 32px; text-align: center;
   i{width: 28px;height:32px;@include bg-image("../../assets/home/09");display: inline-block;vertical-align: middle;margin: 0 27px;}
   i:last-of-type{@include bg-image("../../assets/home/10");}
 }

@@ -13,8 +13,12 @@ import 'vue-awesome-mui/mui/dist/css/mui.css'
 Vue.use(Mui)
 // mui结束
 
+//注册公共组件
 import tabBar from './components/tabBar/tabBar'
 Vue.use(tabBar)
+
+import navBar from './components/navBar/navBar'
+Vue.use(navBar)
 
 
 new Vue({

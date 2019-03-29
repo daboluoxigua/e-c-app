@@ -45,6 +45,7 @@ export default {
   display: table;
   background: #fff;
   border-top: 1px solid #B4B4B4;
+  text-align: center;
   div{
     display: table-cell;
     a{width: 100%;height: 100%;display: inline-block}

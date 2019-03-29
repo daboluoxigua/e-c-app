@@ -31,10 +31,19 @@ const router = new VueRouter({
     },
     {
       path: '/usdtTransfer',
-      component: resolve => require(['../components/members/usdtTransfer/usdtTransfer.vue'], resolve),
+      component: resolve => require(['../components/usdtTransfer/usdtTransfer.vue'], resolve),
       name: 'usdtTransfer',
       meta: {
         title: 'usdt转账',
+        requiresAuth: true
+      }
+    },
+    {
+      path: '/invitation',
+      component: resolve => require(['../components/invitation/invitation.vue'], resolve),
+      name: 'invitation',
+      meta: {
+        title: '邀请好友',
         requiresAuth: true
       }
     },
@@ -44,7 +53,6 @@ const router = new VueRouter({
       name: 'login',
       meta: {
         title: '登录',
-        requiresAuth: true
       }
     },
     // {
@@ -72,14 +80,14 @@ router.beforeEach((to, from, next) => {
         path: '/login',
         // query: { redirect: to.fullPath }
       })
-    } else {
-      if (to.name === 'login') {
+    }else if(to.name === 'login'){
         if (isLogin) {
           router.replace('/')
+        }else{
+          next()
         }
-      } else {
-        next();
-      }
+    }else{
+      next()
     }
   } else {
     next() // 确保一定要调用 next()
