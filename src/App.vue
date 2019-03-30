@@ -50,6 +50,7 @@ a,a:hover{color: #000;text-decoration: none}
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
   font-weight:500;
+  font-size: 26px;
 }
 .boxScroll {
   width: 100%;

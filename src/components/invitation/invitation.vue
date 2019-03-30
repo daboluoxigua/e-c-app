@@ -13,7 +13,7 @@
         <p>扫描二维码立即注册DR商城</p>
       </div>
 
-      <button class="share">一键分享</button>
+      <button class="share" ref="share" @click="shares">一键分享</button>
     </div>
   </div>
 </template>
@@ -56,6 +56,9 @@ export default {
         if (error) console.error(error);
         console.log("success!");
       });
+    },
+    shares(){
+     
     }
   }
 };

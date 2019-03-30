@@ -10,9 +10,8 @@
                   <span></span>
                 </div>
                 <div class="search">
-                    <input type="text" name="" id="" placeholder="天然蜂蜜">
+                    <input type="text" name="" id="" placeholder="天然蜂蜜" @click='search'>
                 </div>
-                <span class="search_button"></span>
               </div>
               <div class="shortcut">
                   <div class="sao">
@@ -74,78 +73,17 @@
               </div>
             
             <div class="advertising">
-              <img :src="linkerImg[6].src" alt="">
+              <router-link to="/details">
+                <img :src="linkerImg[6].src" alt="">
+              </router-link>
             </div>
 
             <div class="titleBar">
               <i></i>精选优品<i></i>
             </div>
 
-            <div class="product">
-              <ul>
-                <li>
-                  <i class="iconImg"></i>
-                  <div class="img"><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1553754741390&di=2c5b5c74e2cafddc7fc8ba7c00e2aa8d&imgtype=0&src=http%3A%2F%2Fi1.hdslb.com%2Fbfs%2Fface%2F1706de25174a3c2752440811c0133438352de617.jpg" alt=""></div>
-                  <p>庄公子 天然蜂蜜自然洋槐花25ml*4瓶 蜂蜜冲饮直蜂蜜冲饮直蜂蜜冲饮直</p>
-                  <div class="price">
-                    <i class="iconImgPrice"></i>
-                    <span>70.00</span>
-                    <del>80.00</del>
-                  </div>
-                </li>
-                <li>
-                  <i class="iconImg"></i>
-                  <div class="img"><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1553754741390&di=2c5b5c74e2cafddc7fc8ba7c00e2aa8d&imgtype=0&src=http%3A%2F%2Fi1.hdslb.com%2Fbfs%2Fface%2F1706de25174a3c2752440811c0133438352de617.jpg" alt=""></div>
-                  <p>庄公子 天然蜂蜜自然洋槐花25ml*4瓶 蜂蜜冲饮直蜂蜜冲饮直蜂蜜冲饮直</p>
-                  <div class="price">
-                    <i class="iconImgPrice"></i>
-                    <span>70.00</span>
-                    <del>80.00</del>
-                  </div>
-                </li>
-                <li>
-                  <i class="iconImg"></i>
-                  <div class="img"><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1553754741390&di=2c5b5c74e2cafddc7fc8ba7c00e2aa8d&imgtype=0&src=http%3A%2F%2Fi1.hdslb.com%2Fbfs%2Fface%2F1706de25174a3c2752440811c0133438352de617.jpg" alt=""></div>
-                  <p>庄公子 天然蜂蜜自然洋槐花25ml*4瓶 蜂蜜冲饮直蜂蜜冲饮直蜂蜜冲饮直</p>
-                  <div class="price">
-                    <i class="iconImgPrice"></i>
-                    <span>70.00</span>
-                    <del>80.00</del>
-                  </div>
-                </li>
-                <li>
-                  <i class="iconImg"></i>
-                  <div class="img"><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1553754741390&di=2c5b5c74e2cafddc7fc8ba7c00e2aa8d&imgtype=0&src=http%3A%2F%2Fi1.hdslb.com%2Fbfs%2Fface%2F1706de25174a3c2752440811c0133438352de617.jpg" alt=""></div>
-                  <p>庄公子 天然蜂蜜自然洋槐花25ml*4瓶 蜂蜜冲饮直蜂蜜冲饮直蜂蜜冲饮直</p>
-                  <div class="price">
-                    <i class="iconImgPrice"></i>
-                    <span>70.00</span>
-                    <del>80.00</del>
-                  </div>
-                </li>
-                <li>
-                  <i class="iconImg"></i>
-                  <div class="img"><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1553754741390&di=2c5b5c74e2cafddc7fc8ba7c00e2aa8d&imgtype=0&src=http%3A%2F%2Fi1.hdslb.com%2Fbfs%2Fface%2F1706de25174a3c2752440811c0133438352de617.jpg" alt=""></div>
-                  <p>庄公子 天然蜂蜜自然洋槐花25ml*4瓶 蜂蜜冲饮直蜂蜜冲饮直蜂蜜冲饮直</p>
-                  <div class="price">
-                    <i class="iconImgPrice"></i>
-                    <span>70.00</span>
-                    <del>80.00</del>
-                  </div>
-                </li>
-                <li>
-                  <i class="iconImg"></i>
-                  <div class="img"><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1553754741390&di=2c5b5c74e2cafddc7fc8ba7c00e2aa8d&imgtype=0&src=http%3A%2F%2Fi1.hdslb.com%2Fbfs%2Fface%2F1706de25174a3c2752440811c0133438352de617.jpg" alt=""></div>
-                  <p>庄公子 天然蜂蜜自然洋槐花25ml*4瓶 蜂蜜冲饮直蜂蜜冲饮直蜂蜜冲饮直</p>
-                  <div class="price">
-                    <i class="iconImgPrice"></i>
-                    <span>70.00</span>
-                    <del>80.00</del>
-                  </div>
-                </li>
-              </ul>
-            </div>
-
+            
+            <product></product>
           
         </div>
       </div>
@@ -156,6 +94,8 @@
 </template>
 
 <script>
+import product from '../product/product'
+
 export default {
   data() {
     return {
@@ -177,7 +117,7 @@ export default {
     };
   },
   components: {
-    // tabBar
+    product
   },
   mounted() {
     mui('.mui-scroll-wrapper').scroll({
@@ -185,6 +125,9 @@ export default {
     });
   },
   methods: {
+    search(){
+      this.$router.push('search')
+    }
   }
 };
 
@@ -199,7 +142,7 @@ export default {
   .top {
       width: 100%;
       display: inline-block;
-    padding: 11px 37px 0;
+    padding: 11px 0 0 37px;
     .prompt {
       float: left;
       @include bg-image("../../assets/home/prompt");
@@ -210,7 +153,7 @@ export default {
     .search{
         float: left;
         margin-left: 33px;
-        width: 520px;
+        width: 610px;
         height: 58px;
         margin-top: 5px;
         input{
@@ -222,6 +165,9 @@ export default {
             font-size: 30px;
             color: #fff;
             border-radius: 10px;
+            @include bg-image("../../assets/home/圆角矩形 2");
+            background-size: 28px 28px;
+            background-position: 20px 15px;
         }
     }
     .search_button{
@@ -229,7 +175,6 @@ export default {
         margin-top: 16px;
         width: 38px;
         height: 38px;
-        display: inline-block;
         @include bg-image("../../assets/home/search_button");
     }
   }
@@ -299,29 +244,5 @@ export default {
   i:last-of-type{@include bg-image("../../assets/home/10");}
 }
 
-.product{
-  li{float: left;width:calc((100% - 30px) - 50%);margin-left: 20px;margin-top: 20px;position: relative; background: #fff;
-    .iconImg{@include bg-image("../../assets/home/热卖");width: 28px; height: 57px; position: absolute;left: 20px;top: 0;}
-    .img{width: 100%;height: 345px;
-      img{width: 100%;height: 100%;}
-    }
-    p{font-size: 26px;
-      color: #000;
-      margin-top: 20px;
-      line-height: 40px;
-      text-align: left;
-      padding: 0 10px;
-      overflow:hidden; 
-      text-overflow:ellipsis;
-      display:-webkit-box; 
-      -webkit-box-orient:vertical;
-      -webkit-line-clamp:2; }
-  }
-  .price{text-align: left;line-height: 75px;
-    .iconImgPrice{@include bg-image("../../assets/home/USDT");width: 28px;height: 28px;margin-left: 20px;margin-right: 11px; display: inline-block;vertical-align: middle}
-    span{color: #FF3548;font-size: 32px;vertical-align: middle;margin-right: 21px;}
-    del{font-size: 22px;color: #A3A3A3;vertical-align: middle;}
-  }
 
-}
 </style>

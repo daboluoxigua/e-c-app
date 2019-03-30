@@ -48,6 +48,22 @@ const router = new VueRouter({
       }
     },
     {
+      path: '/search',
+      component: resolve => require(['../components/search/search.vue'], resolve),
+      name: 'search',
+      meta: {
+        title: '搜索',
+      }
+    },
+    {
+      path: '/details',
+      component: resolve => require(['../components/details/details.vue'], resolve),
+      name: 'details',
+      meta: {
+        title: '详情',
+      }
+    },
+    {
       path: '/login',
       // component: resolve => require(['../components/members/membersIndex/membersIndex.vue'], resolve),
       name: 'login',
