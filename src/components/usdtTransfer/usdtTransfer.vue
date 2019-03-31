@@ -1,7 +1,7 @@
 <!-- 转账 -->
 <template>
   <div class="usdtTransfer">
-      <navBar :title='title'></navBar>
+      <navBar :iSback='iSback' :title='title'></navBar>
       <div class="block amount">
         <div>可用：</div>
         <p><span>618.26</span><i>USDT</i></p>
@@ -26,7 +26,8 @@
 export default {
   data () {
     return {
-        title:'USDT转账'
+        title:'USDT转账',
+        iSback:true
     };
   },
   computed: {},

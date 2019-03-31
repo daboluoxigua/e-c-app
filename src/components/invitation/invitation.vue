@@ -1,7 +1,7 @@
 <!-- 邀请好友 -->
 <template>
   <div class="invitation">
-    <navBar :title="title"></navBar>
+    <navBar :iSback='iSback' :title="title"></navBar>
     <div class="bg">
       <div class="invitationCode">
         <span>我的邀请码</span>
@@ -26,6 +26,7 @@ export default {
   data() {
     return {
       title: "邀请好友",
+      iSback:true,
       invitationCode: "R58EV115"
     };
   },

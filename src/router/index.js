@@ -21,6 +21,14 @@ const router = new VueRouter({
       }
     },
     {
+      path: '/shoppingCar',
+      component: resolve => require(['../components/shoppingCar/shoppingCar.vue'], resolve),
+      name:'shoppingCar',
+      meta: {
+        title: '购物车'
+      }
+    },
+    {
       path: '/my',
       component: resolve => require(['../components/members/membersIndex/membersIndex.vue'], resolve),
       name: 'my',

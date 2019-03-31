@@ -30,7 +30,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang='scss'>
 * {
   margin: 0;
   padding: 0;
@@ -58,6 +58,7 @@ a,a:hover{color: #000;text-decoration: none}
   height: calc(100% - 1.4rem);
 }
 
+
 .Router {
   /* transition: all 0.8s ease; */
   width: 100%;
@@ -80,4 +81,11 @@ a,a:hover{color: #000;text-decoration: none}
 
 /* 黑色按钮 公共样式 */
 .blackButton{height: 88px;width: 690px;margin:0 auto;border: none;background: #000;font-size: 28px;border-radius: 0;display: block;color: #fff;}
+
+input[type='checkbox']{width: 26px !important;height: 26px !important;
+    &:before{
+        font-size: 36px !important
+    }
+}
+input[type='checkbox']:checked:before{color: #000 !important}
 </style>

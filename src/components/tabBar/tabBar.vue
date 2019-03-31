@@ -8,7 +8,7 @@
       </router-link>
     </div>
     <div>
-      <router-link to="/shopping" class="shopping">
+      <router-link to="/shoppingCar" class="shopping">
         <span></span>
         <p>购物车</p>
       </router-link>

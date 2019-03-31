@@ -1,17 +1,14 @@
 <!-- 顶部状态 -->
 <template>
   <div class="navBar">
-      <div class="back" @click="back"></div>
+      <div class="back" @click="back" v-if="iSback"></div>
       <div class="title">{{title}}</div>
   </div>
 </template>
 
 <script>
 export default {
-  props:['title'],
-  components: {},
-  computed: {},
-  mounted(){},
+  props:['title','iSback'],
   methods: {
     back(){
       this.$router.back()
