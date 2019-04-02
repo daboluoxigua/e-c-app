@@ -72,6 +72,51 @@ const router = new VueRouter({
       }
     },
     {
+      path: '/confirmOrder',
+      component: resolve => require(['../components/confirmOrder/confirmOrder.vue'], resolve),
+      name: 'confirmOrder',
+      meta: {
+        title: '确认订单',
+        requiresAuth: true
+      }
+    },
+    {
+      path: '/checkoutCounter',
+      component: resolve => require(['../components/checkoutCounter/checkoutCounter.vue'], resolve),
+      name: 'checkoutCounter',
+      meta: {
+        title: '收银台',
+        requiresAuth: true
+      }
+    },
+    {
+      path: '/moneyPassword',
+      component: resolve => require(['../components/moneyPassword/moneyPassword.vue'], resolve),
+      name: 'moneyPassword',
+      meta: {
+        title: '资金密码',
+        requiresAuth: true
+      }
+    },
+    {
+      path: '/myOder',
+      component: resolve => require(['../components/myOder/myOder.vue'], resolve),
+      name: 'myOder',
+      meta: {
+        title: '我的订单',
+        requiresAuth: true
+      }
+    },
+    {
+      path: '/address',
+      component: resolve => require(['../components/address/address.vue'], resolve),
+      name: 'address',
+      meta: {
+        title: '收货地址',
+        requiresAuth: true
+      }
+    },
+    {
       path: '/login',
       // component: resolve => require(['../components/members/membersIndex/membersIndex.vue'], resolve),
       name: 'login',

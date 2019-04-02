@@ -3,7 +3,7 @@
   <div class="details">
     <div class="topBar">
       <div class="back" @click="back"></div>
-      <div class="shopping"></div>
+      <router-link to="/confirmOrder"><div class="shopping"></div></router-link>
     </div>
 
     <div class="imgBox">
@@ -274,7 +274,7 @@ export default {
     }
   }
 
-  .purchase{width: 100%;display: table; @include border-1px-top(#000);height: 98px; background: #fff;
+  .purchase{width: 100%;display: table; border-top: 1px solid #000;height: 98px; background: #fff;
     >div{float: left;text-align: center;display: table-cell}
     div:nth-child(1){width: 278px;
       span{width: 50%;float: left;padding-top: 17px;

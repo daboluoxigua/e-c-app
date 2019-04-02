@@ -82,7 +82,7 @@
                 </div>
                 <span>删除</span>
             </div>
-            <div class="jiesuan">去结算</div>
+            <div class="jiesuan" @click="jiesuan">去结算</div>
             <div class="tongji">
                 合计：<span>$ 70.00</span>
             </div>
@@ -136,6 +136,9 @@ export default {
                     return
                 }
             }
+      },
+      jiesuan(){
+          this.$router.push('/confirmOrder')
       }
   }
 }

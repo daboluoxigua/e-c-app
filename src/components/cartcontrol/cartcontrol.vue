@@ -1,7 +1,7 @@
 <!-- 数量加减 -->
 <template>
   <div class="cartcontrol">
-      <div class="decrease" :class="currentIndex==0 ?'gray':''" @click="decrease">-</div>
+      <div class="decrease" :class="currentIndex==1 ?'gray':''" @click="decrease">-</div>
       <div class="quantity">{{currentIndex}}</div>
       <div class="add" @click="add">+</div>
   </div>
@@ -22,7 +22,7 @@ export default {
   mounted(){},
   methods: {
       decrease(){
-          if(this.currentIndex > 0){
+          if(this.currentIndex > 1){
               this.currentIndex--
           }
       },

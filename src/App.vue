@@ -49,6 +49,7 @@ a,a:hover{color: #000;text-decoration: none}
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   height: 100%;
+  overflow: hidden;
   font-weight:500;
   font-size: 26px;
 }
@@ -88,4 +89,11 @@ input[type='checkbox']{width: 26px !important;height: 26px !important;
     }
 }
 input[type='checkbox']:checked:before{color: #000 !important}
+
+.mui-popup{
+  .mui-popup-inner{
+    .mui-popup-title{display: none}
+    .mui-popup-text{padding: 78px 0}
+  }
+}
 </style>

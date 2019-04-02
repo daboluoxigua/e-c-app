@@ -51,7 +51,7 @@ export default {
 .inputBox{line-height: 88px;
   div:nth-child(1){width: 170px;text-align:right;font-size: 26px;color: #333;display: inline-block}
   div:nth-child(2){width: calc(100% - 170px);display: inline-block;position: relative;
-    input{font-size: 26px;width: 100%;height: 88px;margin: 0;}
+    input{font-size: 26px;width: 100%;height: 88px;margin: 0;border: none}
     .getVer{position: absolute;right: 0;color: #4A81FF;}
   }
 }

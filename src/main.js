@@ -14,11 +14,15 @@ Vue.use(Mui)
 // mui结束
 
 //注册公共组件
+//底部导航
 import tabBar from './components/tabBar/tabBar'
 Vue.use(tabBar)
-
+//头部状态栏
 import navBar from './components/navBar/navBar'
 Vue.use(navBar)
+//mui滚动组件
+import muiScroll from './components/muiScroll/muiScroll'
+Vue.use(muiScroll)
 
 
 new Vue({
