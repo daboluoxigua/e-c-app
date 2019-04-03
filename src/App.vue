@@ -90,10 +90,16 @@ input[type='checkbox']{width: 26px !important;height: 26px !important;
 }
 input[type='checkbox']:checked:before{color: #000 !important}
 
+input::-webkit-input-placeholder {
+    /* placeholder颜色  */
+      color:#C0C0C0;
+      font-size: 26px;
+  }
+
 .mui-popup{
   .mui-popup-inner{
     .mui-popup-title{display: none}
-    .mui-popup-text{padding: 78px 0}
+    .mui-popup-text{padding: 28px 0}
   }
 }
 </style>

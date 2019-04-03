@@ -16,7 +16,7 @@
                             <input name="radio1" type="radio" checked>
                         </div>
                         <div class="right">
-                            <div class="iconOperate"></div>
+                            <div class="iconOperate" @click='edit'></div>
                             <div class="iconDel" @click="del"></div>
                         </div>
                     </div>
@@ -24,7 +24,7 @@
             </ul>
         </muiScroll>
 
-        <button class="blackButton">新增地址</button>
+        <button class="blackButton" @click="newAddress">新增地址</button>
     </div>
 </template>
 
@@ -38,6 +38,7 @@ export default {
         };
     },
     methods:{
+        //删除
         del(){
             console.log('a')
             mui.confirm('是否要删除这个地址','', '', e=>{
@@ -45,6 +46,14 @@ export default {
                     mui.toast('删除成功',{ duration:'short', type:'div' })
                 }
             },'div')
+        },
+        //新增地址
+        newAddress(){
+            this.$router.push({path: '/editAddress', query: {id: false}})
+        },
+        //编辑地址
+        edit(){
+            this.$router.push({path: '/editAddress', query: {id: 123}})
         }
     }
 }

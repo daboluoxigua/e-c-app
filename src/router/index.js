@@ -117,6 +117,15 @@ const router = new VueRouter({
       }
     },
     {
+      path: '/editAddress',
+      component: resolve => require(['../components/editAddress/editAddress.vue'], resolve),
+      name: 'editAddress',
+      meta: {
+        title: '编辑地址',
+        requiresAuth: true
+      }
+    },
+    {
       path: '/login',
       // component: resolve => require(['../components/members/membersIndex/membersIndex.vue'], resolve),
       name: 'login',
