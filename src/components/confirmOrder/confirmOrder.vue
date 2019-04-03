@@ -114,7 +114,7 @@ export default {
         .title{display: inline-block;width: 142px;}
         .cartcontrol{float: right;margin-top: 17px;}
         .costs{float: right;}
-        .leaveMsg{height: 85px;width: calc(100% - 142px); border: none;margin: 0;}
+        .leaveMsg{height: 85px;line-height: 85px; width: calc(100% - 142px); border: none;margin: 0;}
     }
 
     .subtotal{margin-top: 20px; padding:  0 25px; background: #fff;

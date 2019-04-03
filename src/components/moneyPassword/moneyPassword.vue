@@ -4,7 +4,7 @@
         <navBar :iSback="iSback" :title="title"></navBar>
         <div class="info">请再次输入，以确认密码</div>
         <div class="password">
-            <input ref="pwd" type="number" maxlength="6" oninput="if(value.length>6)value=value.slice(0,6)" v-model="msg" style="position: absolute;z-index: -1;left:-100%;opacity: 0"/>
+            <input ref="pwd" type="number" pattern="\d*" maxlength="6" oninput="if(value.length>6)value=value.slice(0,6)" v-model="msg" style="position: absolute;z-index: -1;left:-100%;opacity: 0"/>
             <ul class="pwd-wrap" @click="focus">
                 <li><i v-if="msgLength > 0"></i></li>
                 <li><i v-if="msgLength > 1"></i></li>

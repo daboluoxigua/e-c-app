@@ -159,6 +159,7 @@ export default {
         input{
             width: 100%;
             height: 100%;
+            line-height: 58px;
             padding-right: 20px;
             padding-left: 70px;
             background: #333;

@@ -37,14 +37,14 @@
 </template>
 
 <script>
-import poppicker from "vue-awesome-mui/mui/examples/hello-mui/js/mui.picker.min";
-import "vue-awesome-mui/mui/examples/hello-mui/css/mui.picker.css";
-import "vue-awesome-mui/mui/examples/hello-mui/css/mui.poppicker.css";
+import poppicker from "vue-awesome-mui/mui/examples/hello-mui/js/mui.picker.min"; //选择器插件
+import "vue-awesome-mui/mui/examples/hello-mui/css/mui.picker.css";//选择器插件样式
+import "vue-awesome-mui/mui/examples/hello-mui/css/mui.poppicker.css";//选择器插件样式
 import dataCity from '../../common/js/data.city.js';//城市数据
 export default {
   data () {
     return {
-        title: this.$route.query.id == 'false' ? "添加收货地址" : "编辑收货地址",
+        title: this.$route.query.id == 'false' ? "添加收货地址" : "编辑收货地址", //id = false 为新增、其他为已有地址
         iSback: true,
         city:''
     };
@@ -52,17 +52,20 @@ export default {
   components: {},
   computed: {},
   mounted(){
+        //初始化 PopPicker
       this.picker = new mui.PopPicker({
           layer: 3,
       });
       this.picker.setData(dataCity)
+      //初始化 PopPicker 结束
   },
   methods: {
       pickerCity(){
+            //   显示选择器
           this.picker.show((getSelectedItems)=>{
               this.city = ''
                 getSelectedItems.forEach(item => {
-                    this.city+= item.text + ' '
+                    this.city+= item.text + ' ' //串联地址名称
                     console.log(this.city)
                 });
             }) 

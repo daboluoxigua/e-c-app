@@ -1,9 +1,10 @@
 <!-- 详情 -->
 <template>
   <div class="details">
+    <muiScroll>
     <div class="topBar">
       <div class="back" @click="back"></div>
-      <router-link to="/confirmOrder"><div class="shopping"></div></router-link>
+      <router-link to="/shoppingCar"><div class="shopping"></div></router-link>
     </div>
 
     <div class="imgBox">
@@ -58,6 +59,7 @@
         <div class="buyNow" @click="shoppingCartPopover">立即购买</div>
     </div>
 
+    </muiScroll>
     <div id="popover" class="shoppingCartPopover mui-popover">
       <div class="close" @click="shoppingCartPopover"></div>
       <div class="product">
