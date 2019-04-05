@@ -39,10 +39,46 @@ const router = new VueRouter({
     },
     {
       path: '/usdtTransfer',
-      component: resolve => require(['../components/usdtTransfer/usdtTransfer.vue'], resolve),
+      component: resolve => require(['../components/members/usdtTransfer/usdtTransfer.vue'], resolve),
       name: 'usdtTransfer',
       meta: {
         title: 'usdt转账',
+        requiresAuth: true
+      }
+    },
+    {
+      path: '/usdtRecharge',
+      component: resolve => require(['../components/members/usdtRecharge/usdtRecharge.vue'], resolve),
+      name: 'usdtRecharge',
+      meta: {
+        title: 'usdt充值',
+        requiresAuth: true
+      }
+    },
+    {
+      path: '/cashWithdrawal',
+      component: resolve => require(['../components/members/cashWithdrawal/cashWithdrawal.vue'], resolve),
+      name: 'cashWithdrawal',
+      meta: {
+        title: 'USDT提币',
+        requiresAuth: true
+      }
+    },
+    {
+      path: '/usdtWallet',
+      component: resolve => require(['../components/members/usdtWallet/usdtWallet.vue'], resolve),
+      name: 'usdtWallet',
+      meta: {
+        title: 'usdt钱包',
+        requiresAuth: true
+      }
+    },
+    {
+      path: '/commission',
+      component: resolve => require(['../components/members/commission/commission.vue'], resolve),
+      name: 'commission',
+      meta: {
+        title: '代理返佣',
         requiresAuth: true
       }
     },

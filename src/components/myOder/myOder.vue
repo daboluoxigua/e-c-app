@@ -5,22 +5,22 @@
             <div id="sliderSegmentedControl" class="mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
                 <div class="titleList">
                     <span>
-                        <a class="mui-control-item paddingNone mui-active " href="#item1mobile">
+                        <a class="mui-control-item paddingNone mui-active " href="#item1mobile" id="accomplish1">
                             待付款
                         </a>
                     </span>
                     <span>
-                    <a class="mui-control-item paddingNone" href="#item2mobile">
+                    <a class="mui-control-item paddingNone" href="#item2mobile" id="accomplish2">
                         待收货
                     </a>
                     </span>
                     <span>
-                    <a class="mui-control-item paddingNone" href="#item3mobile" id="accomplish">
+                    <a class="mui-control-item paddingNone" href="#item3mobile" id="accomplish3">
                         已完成
                     </a>
                     </span>
                     <span>
-                    <a class="mui-control-item paddingNone" href="#item4mobile">
+                    <a class="mui-control-item paddingNone" href="#item4mobile" id="accomplish4">
                         已取消
                     </a>
                     </span>
@@ -157,14 +157,34 @@ export default {
       mui('.mui-scroll-wrapper').scroll({
         deceleration: 0.0005
         });
+    this.init()
   },
   methods:{
+      //进入后根据链接参数跳转选项卡
+      init(){
+          switch(this.$route.query.oderId)
+            {
+            case 2:
+                mui.trigger(document.getElementById("accomplish2"),'touchstart');
+                mui.trigger(document.getElementById("accomplish2"),'tap');
+            break;
+            case 3:
+                mui.trigger(document.getElementById("accomplish3"),'touchstart');
+                mui.trigger(document.getElementById("accomplish3"),'tap');
+            break;
+            case 4:
+                mui.trigger(document.getElementById("accomplish4"),'touchstart');
+                mui.trigger(document.getElementById("accomplish4"),'tap');
+            break;
+            default:
+                mui.trigger(document.getElementById("accomplish1"),'touchstart');
+                mui.trigger(document.getElementById("accomplish1"),'tap');
+            }
+      },
       confirmReceipt(){
-          console.log('1')
            //跳转选项卡 需要依次执行 touchstart tap
-            mui.trigger(document.getElementById("accomplish"),'touchstart');
-            mui.trigger(document.getElementById("accomplish"),'tap');
-           
+            mui.trigger(document.getElementById("accomplish3"),'touchstart');
+            mui.trigger(document.getElementById("accomplish3"),'tap');
       }
   }
 }

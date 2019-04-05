@@ -22,20 +22,28 @@
             </div>
             <div class="stateInfo">
               <div>
-                <span>5</span>
-                <p>待付款</p>
+                <router-link :to="{ path: '/myOder', query: { oderId: 1}}">
+                  <span>5</span>
+                  <p>待付款</p>
+                </router-link>
               </div>
               <div>
+                <router-link :to="{ path: '/myOder', query: { oderId: 2}}">
                 <span>5</span>
                 <p>待付款</p>
+                </router-link>
               </div>
               <div>
+                <router-link :to="{ path: '/myOder', query: { oderId: 3}}">
                 <span>5</span>
                 <p>待付款</p>
+                </router-link>
               </div>
               <div>
+                <router-link :to="{ path: '/myOder', query: { oderId: 4}}">
                 <span>5</span>
                 <p>待付款</p>
+                </router-link>
               </div>
             </div>
           </div>
@@ -48,20 +56,24 @@
           
           <div class="shortcut">
               <div>
+                <router-link to="/usdtWallet">
                 <span class="usdt"></span>
                 <p>USDT钱包</p>
+                </router-link>
               </div>
               <div>
+                <router-link to="/commission">
                 <span class="commission"></span>
-                <p>分销佣金</p>
+                <p>代理佣金</p>
+                </router-link>
               </div>
               <div>
                 <span class="points"></span>
-                <p>复购积分</p>
+                <p>优惠券</p>
               </div>
               <div>
                 <span class="travel"></span>
-                <p>旅游基金</p>
+                <p>每日签到</p>
               </div>
           </div>
 
@@ -234,8 +246,8 @@ export default {
     span{width: 50px;height: 50px;display: inline-block;margin-bottom:18px;
       &.usdt{@include bg-image("../../../assets/membersIndex/usdt (2)");}
       &.commission{@include bg-image("../../../assets/membersIndex/钱包");}
-      &.points{@include bg-image("../../../assets/membersIndex/积分");}
-      &.travel{@include bg-image("../../../assets/membersIndex/旅游 帆船");}
+      &.points{@include bg-image("../../../assets/membersIndex/形状 4");}
+      &.travel{@include bg-image("../../../assets/membersIndex/签到 (1)");}
     }
     p{color: #535353;font-size: 24px;}
   }
