@@ -1,4 +1,5 @@
 // // // vue.config.js
+const webpack = require('webpack')
 module.exports = {
     // 将baseUrl: '/api',改为baseUrl: '/',http://sz.canxingjian.com/http://www.smarant.com/
     baseUrl: './',
@@ -7,21 +8,21 @@ module.exports = {
     //去除打包后生成的.map文件
     productionSourceMap: false,
 
-    devServer: {
-        proxy: {
-            '../..': {
-                target: 'http://sz.canxingjian.com',
-                changeOrigin: true,
-                ws: false,
-                pathRewrite: {
-                    '^../..': ''
-                }
-            }
+    // devServer: {
+    //     proxy: {
+    //         '../..': {
+    //             target: 'http://sz.canxingjian.com',
+    //             changeOrigin: true,
+    //             ws: false,
+    //             pathRewrite: {
+    //                 '^../..': ''
+    //             }
+    //         }
 
             
-        }
+    //     }
 
-    },
+    // },
 
     outputDir: undefined,
     assetsDir: 'assets',
@@ -41,5 +42,15 @@ module.exports = {
             }
         }
     },
+    configureWebpack: {
+            plugins: [
+                new webpack.ProvidePlugin({
+                $:"jquery",
+                jQuery:"jquery",
+            "windows.jQuery":"jquery"
+        })
+            ]
+        
+        }
     
 }

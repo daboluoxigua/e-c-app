@@ -26,6 +26,7 @@ Vue.use(navBar)
 import muiScroll from './components/muiScroll/muiScroll'
 Vue.use(muiScroll)
 
+import $ from 'jquery'
 
 new Vue({
   router,

@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "clipboard": "^2.0.4",
+    "jquery": "^3.3.1",
     "lib-flexible": "^0.3.2",
     "vue": "^2.6.6",
     "vue-awesome-mui": "^1.7.3",

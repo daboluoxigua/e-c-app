@@ -83,6 +83,24 @@ const router = new VueRouter({
       }
     },
     {
+      path: '/coupon',
+      component: resolve => require(['../components/members/coupon/coupon.vue'], resolve),
+      name: 'coupon',
+      meta: {
+        title: '优惠券',
+        requiresAuth: true
+      }
+    },
+    {
+      path: '/signIn',
+      component: resolve => require(['../components/members/signIn/signIn.vue'], resolve),
+      name: 'signIn',
+      meta: {
+        title: '签到',
+        requiresAuth: true
+      }
+    },
+    {
       path: '/invitation',
       component: resolve => require(['../components/invitation/invitation.vue'], resolve),
       name: 'invitation',

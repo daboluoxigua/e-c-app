@@ -68,12 +68,16 @@
                 </router-link>
               </div>
               <div>
-                <span class="points"></span>
-                <p>优惠券</p>
+                <router-link to="/coupon">
+                  <span class="points"></span>
+                  <p>优惠券</p>
+                </router-link>
               </div>
               <div>
+                <router-link to="/signIn">
                 <span class="travel"></span>
                 <p>每日签到</p>
+                </router-link>
               </div>
           </div>
 
