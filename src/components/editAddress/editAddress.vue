@@ -1,4 +1,4 @@
-<!-- 编辑地址 -->
+<!-- 编辑地址 新增还是编辑根据路由参数判断-->
 <template>
   <div class="editAddress">
       <navBar :iSback="iSback" :title="title"></navBar>
@@ -18,7 +18,7 @@
         <div class="item">
             <div class="title">所在地区</div>
             <div class="right">
-                 <input type="text" id="city" @click="pickerCity" readonly="readonly" v-model="city"></input>
+                 <input type="text" id="city" @click="pickerCity" readonly="readonly" v-model="city">
             </div>
         </div>
         <div class="item">

@@ -101,6 +101,60 @@ const router = new VueRouter({
       }
     },
     {
+      path: '/upgradeAgent',
+      component: resolve => require(['../components/members/upgradeAgent/upgradeAgent.vue'], resolve),
+      name: 'upgradeAgent',
+      meta: {
+        title: '升级代理',
+        requiresAuth: true
+      }
+    },
+    {
+      path: '/community',
+      component: resolve => require(['../components/members/community/community.vue'], resolve),
+      name: 'community',
+      meta: {
+        title: '我的社区',
+        requiresAuth: true
+      }
+    },
+    {
+      path: '/personalInfo',
+      component: resolve => require(['../components/members/personalInfo/personalInfo.vue'], resolve),
+      name: 'personalInfo',
+      meta: {
+        title: '个人资料',
+        requiresAuth: true
+      }
+    },
+    {
+      path: '/security',
+      component: resolve => require(['../components/members/security/security.vue'], resolve),
+      name: 'security',
+      meta: {
+        title: '安全中心',
+        requiresAuth: true
+      }
+    },
+    {
+      path: '/securityLoginPassword',
+      component: resolve => require(['../components/members/securityLoginPassword/securityLoginPassword.vue'], resolve),
+      name: 'securityLoginPassword',
+      meta: {
+        title: '登录密码',
+        requiresAuth: true
+      }
+    },
+    {
+      path: '/changePassword',
+      component: resolve => require(['../components/members/changePassword/changePassword.vue'], resolve),
+      name: 'changePassword',
+      meta: {
+        title: '修改密码',
+        requiresAuth: true
+      }
+    },
+    {
       path: '/invitation',
       component: resolve => require(['../components/invitation/invitation.vue'], resolve),
       name: 'invitation',

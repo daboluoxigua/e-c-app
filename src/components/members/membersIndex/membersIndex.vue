@@ -82,33 +82,45 @@
           </div>
 
           <div class="advertising">
+            <router-link to="/upgradeAgent">
               <img :src="linkerImg[2].src" alt="">
+              </router-link>
           </div>
 
           <div class="portal">
              <table>
             <tr>
               <td>
-                <span><img :src="portalImg[0]" alt=""></span>
-                <p>购车积分</p>
-              </td>
-              <td>
+                <router-link to="/community">
                 <span><img :src="portalImg[1]" alt=""></span>
-                <p>分销团队</p>
+                <p>我的社区</p>
+                </router-link>
               </td>
               <td>
-                <span><img :src="portalImg[2]" alt=""></span>
-                <p>销售记录</p>
+                <router-link to="/invitation">
+                <span><img :src="portalImg[3]" alt=""></span>
+                <p>邀请好友</p>
+                </router-link>
+              </td>
+              <td>
+                <router-link to="/personalInfo">
+                <span><img :src="portalImg[4]" alt=""></span>
+                <p>个人资料</p>
+                </router-link>
               </td>
             </tr>
             <tr>
               <td>
-                <span><img :src="portalImg[3]" alt=""></span>
-                <p>邀请好友</p>
+                <router-link to="/address">
+                 <span><img :src="portalImg[6]" alt=""></span>
+                <p>收货地址</p>
+                </router-link>
               </td>
               <td>
-                <span><img :src="portalImg[4]" alt=""></span>
-                <p>个人资料</p>
+                <router-link to="/security">
+                <span><img :src="portalImg[7]" alt=""></span>
+                <p>安全中心</p>
+                </router-link>
               </td>
               <td>
                 <span><img :src="portalImg[5]" alt=""></span>
@@ -117,16 +129,14 @@
             </tr>
             <tr>
               <td>
-                <span><img :src="portalImg[6]" alt=""></span>
-                <p>收货地址</p>
-              </td>
-              <td>
-                <span><img :src="portalImg[7]" alt=""></span>
-                <p>安全中心</p>
-              </td>
-              <td>
-                <span><img :src="portalImg[8]" alt=""></span>
+               <span><img :src="portalImg[8]" alt=""></span>
                 <p>联系客服</p>
+              </td>
+              <td>
+                
+              </td>
+              <td>
+                
               </td>
             </tr>
           </table>
@@ -264,6 +274,7 @@ export default {
 .portal{background: #fff;padding-top: 20px; margin-bottom: 10px;
   table{width: 100%;border-top: 1px solid #E7E7E7; text-align: center;
     td{height: 250px;border-left: 1px solid #E7E7E7;border-bottom: 1px solid #E7E7E7;
+      a{height: 250px;width: 100%;display: inline-block;padding-top: 90px;}
       span{width: 68px;height: 68px;display: inline-block;
         img{width: 100%;height: 100%;}
       }

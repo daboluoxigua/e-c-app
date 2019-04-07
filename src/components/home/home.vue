@@ -236,7 +236,7 @@ export default {
   }
 }
 
-.advertising{width: 710px;height: 200px;margin: 20px;
+.advertising{height: 200px;margin: 20px;
   img{width: 100%;height: 100%;}
 }
 

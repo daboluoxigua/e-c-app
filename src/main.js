@@ -26,6 +26,10 @@ Vue.use(navBar)
 import muiScroll from './components/muiScroll/muiScroll'
 Vue.use(muiScroll)
 
+//消息提示组件
+import dialogS from './components/dialog/dialog'
+Vue.use(dialogS)
+
 import $ from 'jquery'
 
 new Vue({
