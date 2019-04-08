@@ -137,6 +137,51 @@ const router = new VueRouter({
       }
     },
     {
+      path: '/setCollection',
+      component: resolve => require(['../components/members/setCollection/setCollection.vue'], resolve),
+      name: 'setCollection',
+      meta: {
+        title: '收款设置',
+        requiresAuth: true
+      }
+    },
+    {
+      path: '/WeChat',
+      component: resolve => require(['../components/members/setCollection/WeChat.vue'], resolve),
+      name: 'WeChat',
+      meta: {
+        title: '设置微信',
+        requiresAuth: true
+      }
+    },
+    {
+      path: '/Alipay',
+      component: resolve => require(['../components/members/setCollection/Alipay.vue'], resolve),
+      name: 'Alipay',
+      meta: {
+        title: '设置支付宝号',
+        requiresAuth: true
+      }
+    },
+    {
+      path: '/bankCard',
+      component: resolve => require(['../components/members/setCollection/bankCard.vue'], resolve),
+      name: 'bankCard',
+      meta: {
+        title: '添加银行卡',
+        requiresAuth: true
+      }
+    },
+    {
+      path: '/myBankCard',
+      component: resolve => require(['../components/members/myBankCard/myBankCard.vue'], resolve),
+      name: 'myBankCard',
+      meta: {
+        title: '我的银行卡',
+        requiresAuth: true
+      }
+    },
+    {
       path: '/securityLoginPassword',
       component: resolve => require(['../components/members/securityLoginPassword/securityLoginPassword.vue'], resolve),
       name: 'securityLoginPassword',

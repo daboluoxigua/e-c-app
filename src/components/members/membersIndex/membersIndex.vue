@@ -123,8 +123,10 @@
                 </router-link>
               </td>
               <td>
+                <router-link to="/setCollection">
                 <span><img :src="portalImg[5]" alt=""></span>
                 <p>收款设置</p>
+                </router-link>
               </td>
             </tr>
             <tr>

@@ -82,7 +82,7 @@ export default {
         .item{width: 100%;border-bottom: 1px solid #DBDBDB;display: flex;
             .title{width: 190px;color:#3C3C3C;font-size: 28px;line-height: 106px;}
             .right{flex: 1;}
-            input{width: 100%;height: 106px;color: #1B191A;font-size: 30px;margin: 0; margin-bottom: 1px; display: inline-block}
+            input{width: 100%;height: 106px;color: #1B191A;font-size: 30px;margin: 0; margin-bottom: 1px; display: inline-block;border: none}
             #city{width: 100%;height: 106px;float: left; @include bg-image("../../assets/details/左箭头 拷贝 2");background-size: 16px 25px;background-position: right center}
         }
         .item:last-of-type{border: none}
