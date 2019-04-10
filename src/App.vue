@@ -13,6 +13,7 @@
 export default {
   data() {
     return {
+      startup:true,
       transitionName: "slide-right" // 默认动态路由变化为slide-right1
     };
   },
@@ -27,6 +28,12 @@ export default {
       this.$router.isBack = false;
     }
   },
+  mounted(){
+    console.log('a')
+    if(this.startup){
+      this.$router.replace('/startup')
+    }
+  }
 };
 </script>
 

@@ -45,9 +45,9 @@
                     <span><img :src="linkerImg[1].src" alt=""></span>
                     <p>超级VIP</p>
                   </div>
-                  <div class="equity">
+                  <!-- <div class="equity">
                     会员权益<i></i>
-                  </div>
+                  </div> -->
               </div>
             </div>
 
@@ -78,12 +78,20 @@
               </router-link>
             </div>
 
-            <div class="titleBar">
-              <i></i>精选优品<i></i>
+            <div class="titleBar mui-scroll-wrapper mui-slider-indicator mui-segmented-control mui-segmented-control-inverted">
+                <a class="mui-control-item paddingNone mui-active" href="#productMobile1">
+                    优选精品
+                </a>
+                <a class="mui-control-item paddingNone" href="#productMobile2">
+                    折扣专区
+                </a>
             </div>
 
-            
-            <product></product>
+            <div id="productMobile1" class="mui-slider-item mui-control-content mui-active">
+              <product></product>
+            </div>
+            <div id="productMobile2" class="mui-slider-item mui-control-content">
+            </div>
           
         </div>
       </div>
@@ -216,10 +224,11 @@ export default {
     }
     .line{float: left;width: 2px;background: #A3A3A3;height: 34px;margin-top: 36px;margin-left: 29px;margin-right: 30px;}
     .level{
-      float: left;
+      float: right;
+      margin-right: 30px;
       margin-top: 32px;
       img{width: 42px;height: 42px;float: left;margin-right: 13px;}
-      p{font-size: 26px;color: #B19464;white-space:nowrap;line-height: 42px;}
+      p{font-size: 26px;color: #B19464;white-space:nowrap;line-height: 42px;float: left;}
     }
     .equity{float: right;margin-right: 33px;font-size: 26px;color: #B19464;margin-top: 42px;
       i{@include bg-image("../../assets/home/矩形 22");width: 21px;height: 21px;display: inline-block;vertical-align: middle;margin-left: 6px;}
@@ -240,9 +249,10 @@ export default {
   img{width: 100%;height: 100%;}
 }
 
-.titleBar{background: #fff;padding: 29px 0; color: #252525; font-size: 32px; text-align: center;
-  i{width: 28px;height:32px;@include bg-image("../../assets/home/09");display: inline-block;vertical-align: middle;margin: 0 27px;}
-  i:last-of-type{@include bg-image("../../assets/home/10");}
+.titleBar{background: #fff;padding: 29px 0;height: 88px; padding: 0!important;  color: #252525; text-align: center; display: flex;justify-content:  center ;
+  a{width: 200px;border-bottom: 6px solid #fff!important;height: 88px;line-height: 88px; display: inline-block; font-size: 32px; color: #888888 !important;margin: 0 80px;
+    &.mui-active{border-color: #EEBC84!important;color: #252525 !important;}
+  }
 }
 
 

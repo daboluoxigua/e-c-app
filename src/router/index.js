@@ -8,16 +8,24 @@ const router = new VueRouter({
   linkActiveClass: 'active',
   base: '/',
   routes: [
+    // {
+    //   path: '/', // 默认进入路由
+    //   redirect: '/home'  //重定向
+    // },
     {
-      path: '/', // 默认进入路由
-      redirect: '/home'  //重定向
+      path: '/startup',
+      component: resolve => require(['../components/startup/startup.vue'], resolve),
+      name:'startup',
+      meta: {
+        title: '启动页'
+      }
     },
     {
       path: '/home',
       component: resolve => require(['../components/home/home.vue'], resolve),
       name:'home',
       meta: {
-        title: '欢迎'
+        title: '首页'
       }
     },
     {
@@ -280,10 +288,26 @@ const router = new VueRouter({
     },
     {
       path: '/login',
-      // component: resolve => require(['../components/members/membersIndex/membersIndex.vue'], resolve),
+      component: resolve => require(['../components/registerLogin/login.vue'], resolve),
       name: 'login',
       meta: {
         title: '登录',
+      }
+    },
+    {
+      path: '/register',
+      component: resolve => require(['../components/registerLogin/register.vue'], resolve),
+      name: 'register',
+      meta: {
+        title: '注册',
+      }
+    },
+    {
+      path: '/forgetPassword',
+      component: resolve => require(['../components/registerLogin/forgetPassword.vue'], resolve),
+      name: 'forgetPassword',
+      meta: {
+        title: '忘记密码',
       }
     },
     // {
