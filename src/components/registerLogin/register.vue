@@ -13,18 +13,15 @@
 
     <div class="formList">
       <ul>
-        <li class="icon1">
-          <input type="text" placeholder="请输入用户名">
+        <li class="icon3 pickrPhone">
+          <div class="picker" @tap="pickerLevel">{{pickerMsg}}</div>
+          <input type="text" placeholder="绑定手机号">
         </li>
         <li class="icon2">
           <input type="password" placeholder="请输入登录密码">
         </li>
         <li class="icon2">
           <input type="password" placeholder="确认登录密码">
-        </li>
-        <li class="icon3 pickrPhone">
-          <div class="picker" @tap="pickerLevel">{{pickerMsg}}</div>
-          <input type="text" placeholder="绑定手机号">
         </li>
         <li class="icon4">
           <input type="text" placeholder="短信验证码">

@@ -8,18 +8,22 @@ const router = new VueRouter({
   linkActiveClass: 'active',
   base: '/',
   routes: [
-    // {
-    //   path: '/', // 默认进入路由
-    //   redirect: '/home'  //重定向
-    // },
     {
-      path: '/startup',
-      component: resolve => require(['../components/startup/startup.vue'], resolve),
-      name:'startup',
-      meta: {
-        title: '启动页'
-      }
+      path: '/', // 默认进入路由
+      redirect: '/home'  //重定向
     },
+    {
+      path: "*",
+      redirect: "/"
+    },
+    // {
+    //   path: '/startup',
+    //   component: resolve => require(['../components/startup/startup.vue'], resolve),
+    //   name:'startup',
+    //   meta: {
+    //     title: '启动页'
+    //   }
+    // },
     {
       path: '/home',
       component: resolve => require(['../components/home/home.vue'], resolve),
@@ -308,6 +312,14 @@ const router = new VueRouter({
       name: 'forgetPassword',
       meta: {
         title: '忘记密码',
+      }
+    },
+    {
+      path: '/announcement',
+      component: resolve => require(['../components/announcement/announcement.vue'], resolve),
+      name: 'announcement',
+      meta: {
+        title: '最新公告',
       }
     },
     // {

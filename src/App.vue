@@ -29,10 +29,10 @@ export default {
     }
   },
   mounted(){
-    console.log('a')
-    if(this.startup){
-      this.$router.replace('/startup')
-    }
+    // console.log('a')
+    // if(this.startup){
+    //   this.$router.replace('/startup')
+    // }
   }
 };
 </script>

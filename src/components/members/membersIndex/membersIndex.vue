@@ -132,13 +132,15 @@
             <tr>
               <td>
                <span><img :src="portalImg[8]" alt=""></span>
-                <p>联系客服</p>
+                <p>休闲娱乐</p>
               </td>
               <td>
-                
+                <span><img :src="portalImg[9]" alt=""></span>
+                <p>生态金融</p>
               </td>
               <td>
-                
+                <span><img :src="portalImg[10]" alt=""></span>
+                <p>数字银行</p>
               </td>
             </tr>
           </table>
@@ -172,7 +174,9 @@ export default {
         require('../../../assets/membersIndex/收款@2x.png'),
         require('../../../assets/membersIndex/地址 (1)@2x.png'),
         require('../../../assets/membersIndex/安全 (2)@2x.png'),
-        require('../../../assets/membersIndex/客服@2x.png'),
+        require('../../../assets/membersIndex/游戏@2x.png'),
+        require('../../../assets/membersIndex/金融 (1)@2x.png'),
+        require('../../../assets/membersIndex/区块链@2x.png'),
       ]
     };
   },

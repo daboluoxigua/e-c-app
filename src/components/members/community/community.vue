@@ -35,9 +35,10 @@
     </div>
     <div class="tabList">
       <ul>
-        <li>
-            <div class="left">用户名</div>
+        <li class="active">
+            <div class="left"><i></i>用户名</div>
             <div class="right">级别</div>
+            <div class="phone"><span>12345648</span><em></em></div>
         </li>
         <li>
             <div class="left">用户名</div>
@@ -140,11 +141,21 @@ export default {
 <style lang='scss' scoped>
 @import "../../../common/css/mixin.scss";
 .tabList{background: #fff;margin-top: 20px; padding: 0 30px;
-    li{width: 100%; display: inline-block; border-bottom: 1px solid #E4E4E4;height: 88px;line-height: 88px;
-        .left{float: left; font-size: 28px;color: #212121}
+    li{width: 100%; display: inline-block; border-bottom: 1px solid #E4E4E4;line-height: 88px;
+        .left{float: left; font-size: 28px;color: #212121;
+          i{margin-right: 13px; width: 12px;height: 20px; @include bg-image("../../../assets/details/左箭头 拷贝 2");display: inline-block;transform:rotate(90deg)}
+        }
         .right{float: right; font-size: 28px;color: #949494;
             &.pick{color: #212121;font-size: 26px;@include bg-image("../../../assets/下箭头 拷贝");background-size: 14px 24px;background-position: center right; padding-right: 30px;}
         }
+        .phone{padding-left: 36px;width: 100%;display: inline-block;line-height: 53px;display:none;
+          span{color: #939393;font-size: 28px;float: left;}
+          em{@include bg-image("电话");float: right;width:  53px;height: 53px;}
+        }
+      &.active{
+        .phone{display: inline-block}
+        .left i{transform:rotate(-90deg)}
+      }
     }
     li:last-of-type{border-bottom: none}
 }
