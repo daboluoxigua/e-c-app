@@ -322,6 +322,14 @@ const router = new VueRouter({
         title: '最新公告',
       }
     },
+    {
+      path: '/feedback',
+      component: resolve => require(['../components/feedback/feedback.vue'], resolve),
+      name: 'feedback',
+      meta: {
+        title: '问题反馈',
+      }
+    },
     // {
     //   path: '*',
     //   redirect: '/'

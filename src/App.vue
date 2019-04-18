@@ -102,6 +102,11 @@ input::-webkit-input-placeholder {
       color:#C0C0C0;
       font-size: 26px;
   }
+  textarea::-webkit-input-placeholder {
+    /* placeholder颜色  */
+      color:#C0C0C0;
+      font-size: 26px;
+  }
 
 .mui-popup{
   .mui-popup-inner{
