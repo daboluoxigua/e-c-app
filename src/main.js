@@ -11,7 +11,7 @@ import Mui from 'vue-awesome-mui'
 import 'vue-awesome-mui/mui/dist/css/mui.css'
 
 import {showLoading,hideLoading} from './common/js/showLoading'
-import './common/css/showLoading.css'
+import './common/css/showLoading.scss'
 
 // mount with global  
 Vue.use(Mui)
