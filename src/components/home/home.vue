@@ -103,6 +103,7 @@
 
 <script>
 import product from '../product/product'
+import { setTimeout } from 'timers';
 
 export default {
   data() {
@@ -128,6 +129,12 @@ export default {
     product
   },
   mounted() {
+    this.$showLoading('加载中')
+
+    setTimeout(()=>{
+      this.$hideLoading()
+    },2000)
+
     mui('.mui-scroll-wrapper').scroll({
       deceleration: 0.0005
     });

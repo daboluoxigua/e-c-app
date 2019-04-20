@@ -10,9 +10,14 @@ import 'lib-flexible/flexible.js'//自适应分辨率
 import Mui from 'vue-awesome-mui'
 import 'vue-awesome-mui/mui/dist/css/mui.css'
 
+import {showLoading,hideLoading} from './common/js/showLoading'
+import './common/css/showLoading.css'
 
 // mount with global  
 Vue.use(Mui)
+
+Vue.prototype.$showLoading = showLoading
+Vue.prototype.$hideLoading = hideLoading
 // mui结束
 
 //注册公共组件
