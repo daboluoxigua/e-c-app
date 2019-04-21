@@ -159,6 +159,9 @@ export default {
     input {
       background: none;
       border: none;
+      height: 50px;
+      line-height: 50px;
+      margin: 0;
     }
     .getVer{position: absolute;top: 14px; right: 30px; color: #0066FF;}
 

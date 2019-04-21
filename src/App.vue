@@ -50,6 +50,7 @@ html {
 }
 li{list-style: none;}
 p{margin-bottom: 0 !important;font-size: 26px !important}
+input, select, textarea{font-size: 26px !important}
 a,a:hover{color: #000;text-decoration: none}
 #app {
   font-family: "HiraginoSansGB", Helvetica, Arial, sans-serif;
