@@ -36,6 +36,18 @@ export default {
   components: {},
   computed: {},
   mounted() {
+    let i = 10
+    let countDown = ()=>{
+      setTimeout(() => {
+        if(i>=1){
+          i--
+          console.log(i)
+          countDown()
+        }
+      }, 1000);
+    }
+    countDown()
+    
   },
   methods: {
   }

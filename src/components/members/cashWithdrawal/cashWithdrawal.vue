@@ -9,7 +9,7 @@
       <div class="block inputBox">
         <div>地址：</div>
         <div><input type="text" placeholder="请输入资产地址或扫描录入"></div>
-        <div class="scanningCode" @click="scanPicture();"></div>
+        <div class="scanningCode" @tap='qrcodescan'></div>
       </div>
       <div class="block inputBox">
         <div>数量：</div>
@@ -43,6 +43,7 @@ export default {
   },
   computed: {},
   mounted(){
+    
 		mui.plusReady(()=>{
 	          mui.init();
 		  thi.startRecognize();
@@ -98,8 +99,15 @@ export default {
 		    },function(err){
 		        plus.nativeUI.alert("Failed: "+err.message);
 		    });
-		}
+    },
+    qrcodescan(){
+        var YDB = new YDBOBJ();
+        YDB.GetScan()
+        console.log(YDB)
+    }
+
   }
+
 }
 
 
