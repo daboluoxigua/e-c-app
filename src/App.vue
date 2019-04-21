@@ -49,7 +49,7 @@ html {
   background: #f5f5f5;
 }
 li{list-style: none;}
-p{margin-bottom: 0 !important;}
+p{margin-bottom: 0 !important;font-size: 26px !important}
 a,a:hover{color: #000;text-decoration: none}
 #app {
   font-family: "HiraginoSansGB", Helvetica, Arial, sans-serif;
